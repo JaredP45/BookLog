@@ -62,6 +62,3 @@ class SelectOption:
             line = line.split(',')
             print(f'{line[0]}, by {line[1]}, Read {line[2]}, Rating {line[3]}', end='')
         file.close()
-
-    def case_5(self):
-        print('Thanks for using this application!')
