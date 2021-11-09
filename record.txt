@@ -1,3 +1,4 @@
 The Great Gatsby,Gatsby,2020,10
 Moby Dick,Moby,30,20
 Meditations,Marcus Aurelius,2020,2000
+The Loser Gatsby,Gatsby,5050,6

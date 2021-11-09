@@ -1,10 +1,9 @@
 from BookRecord import SelectOption as So
 
-count = 0
 inputSelection = int(input('Enter your selection: '))
-while count < 5:
+while inputSelection != 5:
     # Initialize switch
-    switch = So('', '', '', '')
+    switch = So()
 
     if inputSelection == 1:
         inputTitle = input('Enter Title: ')
@@ -13,7 +12,6 @@ while count < 5:
         inputRating = input('Enter Rating: ')
         switch = So(inputTitle, inputAuthor, inputDate, inputRating)
         switch.option(inputSelection)
-        count += 1
 
     elif inputSelection == 2:
         inputTitle = input('Enter Title: ')
@@ -25,4 +23,11 @@ while count < 5:
         switch = So(author=inputAuthor)
         switch.option(inputSelection)
 
-    inputSelection = int(input('Enter your selection: '))
+    elif inputSelection == 4:
+        switch.option(inputSelection)
+
+    elif inputSelection == 5:
+        switch.option(inputSelection)
+        break
+
+    inputSelection = int(input('\nEnter your selection: '))
