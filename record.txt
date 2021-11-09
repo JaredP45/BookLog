@@ -1,0 +1,3 @@
+The Great Gatsby,Gatsby,2020,10
+Moby Dick,Moby,30,20
+Meditations,Marcus Aurelius,2020,2000

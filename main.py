@@ -17,12 +17,12 @@ while count < 5:
 
     elif inputSelection == 2:
         inputTitle = input('Enter Title: ')
-        switch = So(inputTitle)
+        switch = So(title=inputTitle)
         switch.option(inputSelection)
 
     elif inputSelection == 3:
         inputAuthor = input('Enter Author Name: ')
-        switch = So(inputAuthor)
+        switch = So(author=inputAuthor)
         switch.option(inputSelection)
 
     inputSelection = int(input('Enter your selection: '))
