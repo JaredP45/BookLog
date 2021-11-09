@@ -5,13 +5,16 @@ switch = So()
 end_program = False
 
 inputSelection = int(input('Enter your selection: '))
-while inputSelection != 5 or end_program == True:
+while inputSelection != 5 or end_program is True:
 
     if inputSelection == 1:
         inputTitle = input('Enter Title: ')
         inputAuthor = input('Enter Author: ')
         inputDate = input('Enter Date Read: ')
-        inputRating = input('Enter Rating: ')
+        inputRating = int(input('Enter Rating: '))
+        while inputRating < 0 or inputRating > 10:
+            print('You must enter rating score in range of 0 to 10.')
+            inputRating = int(input('\nEnter Rating: '))
         switch = So(inputTitle, inputAuthor, inputDate, inputRating)
         switch.option(inputSelection)
 
