@@ -14,7 +14,7 @@ class SelectOption:
         self.rating = rating
 
     def case_1(self):
-        file = open('record.txt')
+        file = open('record.txt', 'a')
         if validateDate(self.date):
             book_listing = str(f'{self.title},{self.author},{self.date},{self.rating}\n')
             file.write(book_listing)
