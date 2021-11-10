@@ -1,10 +1,5 @@
 from exceptions import validateDate
 
-"""
-Author: Jared Paubel
-Date: 11/08/2021
-"""
-
 
 class SelectOption:
     def option(self, selection):
@@ -19,7 +14,7 @@ class SelectOption:
         self.rating = rating
 
     def case_1(self):
-        file = open('record.txt', 'a')
+        file = open('record.txt')
         if validateDate(self.date):
             book_listing = str(f'{self.title},{self.author},{self.date},{self.rating}\n')
             file.write(book_listing)

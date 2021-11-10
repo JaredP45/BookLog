@@ -4,7 +4,11 @@ from BookRecord import SelectOption as So
 switch = So()
 end_program = False
 
-inputSelection = int(input('Enter your selection: '))
+try:
+    inputSelection = int(input('Enter your selection: '))
+except ValueError:
+    print('\nYou must enter a number.\n')
+    inputSelection = 0
 while inputSelection != 5 or end_program is True:
 
     if inputSelection == 1:
@@ -40,6 +44,10 @@ while inputSelection != 5 or end_program is True:
           '4. Display all books\n',
           '5. Exit')
 
-    inputSelection = int(input('Enter your selection: '))
+    try:
+        inputSelection = int(input('Enter your selection: '))
+    except ValueError:
+        print('\nYou must enter a number.\n')
+        inputSelection = 0
 
 print('Thanks for using this application!')
