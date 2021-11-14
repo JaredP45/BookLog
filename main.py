@@ -15,7 +15,7 @@ if __name__ == '__main__':
         if inputSelection == 1:
             inputTitle = input('Enter Title: ')
             inputAuthor = input('Enter Author: ')
-            inputDate = input('Enter Date Read (mm/dd/yyyy): ')
+            inputDate = input('Enter Date Read (mm-dd-yyyy): ')
             inputRating = int(input('Enter Rating: '))
             while inputRating < 0 or inputRating > 10:
                 print('You must enter rating score in range of 0 to 10.')
