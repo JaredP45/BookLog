@@ -27,7 +27,7 @@ class SelectOption:
         lines = file.readlines()
         for line in lines:
             line = line.split(',')
-            if line[0] == search_title:
+            if search_title in line[0]:
                 print(f'{line[0]}, by {line[1]}, Read {line[2]}, Rating {line[3]}', end='')
                 found_title = True
                 break
@@ -44,7 +44,7 @@ class SelectOption:
         lines = file.readlines()
         for line in lines:
             line = line.split(',')
-            if line[1] == search_author:
+            if search_author in line[1]:
                 print(f'{line[0]}, by {line[1]}, Read {line[2]}, Rating {line[3]}', end='')
                 found_author = True
             else:
