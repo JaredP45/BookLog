@@ -60,3 +60,18 @@ class SelectOption:
             line = line.split(',')
             print(f'{line[0]}, by {line[1]}, Read {line[2]}, Rating {line[3]}', end='')
         file.close()
+
+    def case_5(self):
+        search_title = self.title
+
+        with open('record.txt', 'r') as file:
+            lines = file.readlines()
+
+        with open('record.txt', 'w') as file:
+            for line in lines:
+                if search_title not in line.strip('\n'):
+                    file.write(line)
+
+
+
+
