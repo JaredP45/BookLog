@@ -10,7 +10,7 @@ if __name__ == '__main__':
     except ValueError:
         print('\nYou must enter a number.\n')
         inputSelection = 0
-    while inputSelection != 5 or end_program is True:
+    while inputSelection != 6:
 
         if inputSelection == 1:
             inputTitle = input('Enter Title: ')
@@ -37,13 +37,19 @@ if __name__ == '__main__':
             switch.option(inputSelection)
 
         elif inputSelection == 5:
-            end_program = True
+            inputTitle = input('Delete Title: ')
+            switch = So(title=inputTitle)
+            switch.option(inputSelection)
+
+        elif inputSelection == 6:
+            break
 
         print('\n 1. Enter a book\n',
               '2. Search for a book\n',
               '3. Search for an author\n',
               '4. Display all books\n',
-              '5. Exit')
+              '5. Delete a book\n',
+              '6. Exit')
 
         try:
             inputSelection = int(input('Enter your selection: '))
